@@ -1,0 +1,12 @@
+def langLevel = 1.6
+
+allprojects {
+    apply plugin: 'idea'
+}
+
+idea {
+    project {
+        jdkName = langLevel
+        languageLevel = langLevel
+    }
+}
